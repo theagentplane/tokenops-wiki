@@ -111,6 +111,18 @@ Policies live **outside** the agent so the agent cannot rewrite or bypass them. 
 
 Expanded notes on each row → [Comparison guide](./docs/comparison.md)
 
+## Customer outcomes
+
+TokenOps proves value when agents deliver **more useful work per dollar** — not when policies fire more often.
+
+| Outcome | Metric |
+|---|---|
+| **Cheaper** | Avg / median cost per completed run ↓ |
+| **More done** | % runs completed within budget ↑ (vs simple throttle) |
+| **Still good** | Output quality ≥ baseline |
+
+→ [Customer outcomes](./docs/customer-outcomes.md)
+
 ---
 
 ## Feature set
@@ -183,6 +195,12 @@ How TokenOps thinks about token spend — the rules that hold regardless of mode
 Side-by-side with LiteLLM, Portkey, Cloudflare AI Gateway, and Langfuse — scoped to run vs request, budget enforcement, steering, and fail-closed behavior.
 
 → [Read comparison](./docs/comparison.md)
+
+### [Customer outcomes](./docs/customer-outcomes.md)
+
+How to measure end-user value: lower average cost, more runs finished under budget, quality held flat — vs ungoverned and throttle-only baselines.
+
+→ [Read customer outcomes](./docs/customer-outcomes.md)
 
 ### [Workflow](./docs/workflow.md)
 
