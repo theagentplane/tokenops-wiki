@@ -100,7 +100,7 @@ Policies live **outside** the agent so the agent cannot rewrite or bypass them. 
 <tr>
 <td><strong>Fail-Closed Integrity</strong></td>
 <td>Missing registration or exceeded budget</td>
-<td>Native/strict</td>
+<td>Upcoming (optional)</td>
 <td>Optional</td>
 <td>Limited</td>
 <td>No</td>
@@ -127,7 +127,7 @@ Expanded notes on each row → [Comparison guide](./docs/comparison.md)
 | **Deterministic policies** | Detector reads ledger → policy emits action; no LLM in the enforcement path |
 | **Multi-agent rollup** | Same `run_id` across agents; child spend rolls into the parent total |
 | **Sticky halt** | Once halted, every later crossing for that run is refused |
-| **Fail closed** | Missing registration or price → refuse, not silent allow |
+| **Fail closed** | Missing registration or price → refuse (upcoming, optional) |
 | **Run history** | Completed, halted, and throttled runs with cost, steps, and halt reasons |
 | **Operator UI** | Policy admin, dashboard, live simulator with trace and control-plane views |
 
@@ -173,7 +173,7 @@ How TokenOps thinks about token spend — the rules that hold regardless of mode
 - **Measure, attribute, bound** on every crossing
 - Enforce **during** the run, not from a static pre-run estimate
 - **Control plane** separate from data plane; agent never owns the budget check
-- **Fail closed**; **act** (halt, steer, inject), don't just alert
+- Fail-closed mode (upcoming, optional); **act** (halt, steer, inject), don't just alert
 - Budgets accumulate spend; policies decide what to do when signals trip
 
 → [Read principles](./docs/principles.md)

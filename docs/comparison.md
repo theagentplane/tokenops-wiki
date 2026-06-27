@@ -72,7 +72,7 @@ TokenOps governs the **run** — a full agent workflow across many model, tool, 
 <tr>
 <td><strong>Fail-Closed Integrity</strong></td>
 <td>Missing registration or exceeded budget</td>
-<td>Native/strict</td>
+<td>Upcoming (optional)</td>
 <td>Optional</td>
 <td>Limited</td>
 <td>No</td>
@@ -89,7 +89,7 @@ TokenOps governs the **run** — a full agent workflow across many model, tool, 
 
 **Steering Capability** — TokenOps can mutate the next call (model, output cap, prompt) or inject corrections into the conversation. Gateways offer routing and fallbacks; Langfuse does not steer execution.
 
-**Fail-Closed Integrity** — TokenOps refuses telemetry without registration and halts on budget breach by default. Other tools treat limits as optional or report-only.
+**Fail-Closed Integrity** — Fail-closed mode (refuse on missing registration or exceeded budget) is an upcoming optional setting for TokenOps. Gateways offer varying degrees of optional or limited enforcement; Langfuse is report-only.
 
 ---
 
