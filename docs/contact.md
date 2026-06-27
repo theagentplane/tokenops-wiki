@@ -7,15 +7,11 @@ We help teams wire TokenOps into agent pipelines — registration, boundary inst
 | Channel | Use for |
 |---|---|
 | **[GitHub Issues on this wiki](https://github.com/theagentplane/tokenops-wiki/issues)** | Onboarding questions, documentation feedback, general inquiries |
+| **[tishachawla5@gmail.com](mailto:tishachawla5@gmail.com)** | Direct email — onboarding and partnerships |
+| **[susheemkoul97@gmail.com](mailto:susheemkoul97@gmail.com)** | Direct email — onboarding and partnerships |
 | **[Agent Plane on GitHub](https://github.com/theagentplane)** | Organization profile and related projects |
 
-Open an issue with:
-
-- A short description of your agent architecture (single vs multi-agent, frameworks)
-- Which failure modes you care about most (runaway spend, stuck loops, context growth, fan-out)
-- Whether you need help with instrumentation, governance config, or both
-
-We respond to onboarding inquiries through GitHub Issues. If you prefer a private channel, say so in the issue and we will follow up.
+We respond to onboarding inquiries through GitHub Issues or email. Include a short description of your agent architecture, priority failure modes, and whether you need help with instrumentation, governance config, or both.
 
 ## What onboarding typically covers
 

@@ -130,7 +130,7 @@ Deep dive on the (detect, fix) model, enforcement moments, full policy tables, b
 
 We help teams wire TokenOps into agent pipelines — registration, boundary hooks, budget design, and policy tuning.
 
-Open a [GitHub Issue](https://github.com/theagentplane/tokenops-wiki/issues) with your agent architecture, priority failure modes, and whether you need instrumentation or governance config help.
+Open a [GitHub Issue](https://github.com/theagentplane/tokenops-wiki/issues) or email [tishachawla5@gmail.com](mailto:tishachawla5@gmail.com) / [susheemkoul97@gmail.com](mailto:susheemkoul97@gmail.com) with your agent architecture, priority failure modes, and whether you need instrumentation or governance config help.
 
 → [Get in touch](./docs/contact.md)
 
