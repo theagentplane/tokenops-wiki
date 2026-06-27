@@ -8,8 +8,8 @@ TokenOps governs the **run** — a full agent workflow across many model, tool, 
 <th align="left">Capability</th>
 <th align="left">Example</th>
 <th align="left"><img src="../assets/logos/tokenops.svg" height="20" alt="" /> TokenOps</th>
-<th align="left"><img src="../assets/logos/litellm.svg" height="20" alt="" /> LiteLLM</th>
-<th align="left"><img src="../assets/logos/portkey.svg" height="20" alt="" /> Portkey</th>
+<th align="left"><img src="../assets/logos/litellm.png" height="20" alt="" /> LiteLLM</th>
+<th align="left"><img src="../assets/logos/portkey.png" height="20" alt="" /> Portkey</th>
 <th align="left"><img src="../assets/logos/cloudflare.svg" height="20" alt="" /> Cloudflare AI Gateway</th>
 <th align="left"><img src="../assets/logos/langfuse.svg" height="20" alt="" /> Langfuse</th>
 </tr>
