@@ -4,8 +4,6 @@
 
 TokenOps is a control plane that sits alongside your agent (data plane). It measures spend as it accrues, attributes it to the right run and customer context, and enforces deterministic policies — before and after each model, tool, and delegation call.
 
-This wiki is the public overview. Implementation details of the private product repo are intentionally omitted.
-
 ---
 
 ## Contents
@@ -44,7 +42,7 @@ Policies live **outside** the agent so the agent cannot rewrite or bypass them. 
 
 ## Reference demo
 
-The open [tokenops-wiki](https://github.com/theagentplane/tokenops-wiki) documents behavior using a **two-agent research bench** (research → summarize). It is a teaching harness, not the production deployment shape. The same control-plane concepts apply to single-agent and multi-agent pipelines.
+The pages below walk through a **two-agent research bench** (research → summarize). It is a teaching harness, not the production deployment shape. The same control-plane concepts apply to single-agent and multi-agent pipelines.
 
 ---
 

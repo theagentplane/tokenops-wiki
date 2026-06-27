@@ -25,10 +25,6 @@ We respond to onboarding inquiries through GitHub Issues. If you prefer a privat
 4. **Policy selection** — which of the ten default policies to enable, and parameters for your task shapes  
 5. **Operator visibility** — run history, halt reasons, and control-plane signals for your team  
 
-## What we do not share publicly
-
-Implementation details of the private product repository — internal APIs, proprietary segment matchers, and deployment-specific integrations — are shared under NDA during onboarding, not in this wiki.
-
 ---
 
 [Back to overview](../README.md)

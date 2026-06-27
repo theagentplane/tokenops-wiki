@@ -73,11 +73,3 @@ When a run is **halted**, it stays halted for the remainder of that run. The kil
 | **Stuck** | Same tool call with no progress | `progress_guard`, `tool_fix` |
 | **Decay** | Context grows until quality collapses | `context_compaction` |
 | **Fan-out** | Too many concurrent calls or huge tool payloads | `concurrency_cap`, `tool_output_cap` |
-
----
-
-## What we publish vs keep internal
-
-This wiki describes **behavior and operator workflow**. We do not publish internal matcher DSLs, detector tuning constants, or proprietary segment-composition logic. Those evolve in the product repo.
-
-For the conceptual background on why run-level governance matters, see also the public essay style doc in the private repo's `why-token-governance.md` (not duplicated here to avoid drift).

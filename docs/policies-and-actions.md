@@ -84,7 +84,7 @@ These are starting points in the reference bench — operators tune them per wor
 | `context_compaction` | `ctx_max`: 100000; requires prompt hook for full effect |
 | `output_runaway` | Repeat threshold; bounded retries before inject |
 
-Exact detector tuning (similarity thresholds, token estimators, etc.) is product-internal and may change between releases.
+Exact detector tuning (similarity thresholds, token estimators, etc.) may change between releases.
 
 ---
 

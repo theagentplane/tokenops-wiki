@@ -84,7 +84,7 @@ In the screenshot above: one run, total cost ~$0.0003, one problematic (halted) 
 
 ## Try it yourself
 
-The demo harness is in the private `tokenops` product repo (not required to read this wiki). Operators with repo access:
+If you have the TokenOps demo environment locally:
 
 ```bash
 make install
