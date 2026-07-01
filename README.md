@@ -138,6 +138,7 @@ TokenOps proves value when agents deliver **more useful work per dollar** — no
 | **Budgets** | Spend accumulators with optional caps scoped to run, user, or tag |
 | **Deterministic policies** | Detector reads ledger → policy emits action; no LLM in the enforcement path |
 | **Multi-agent rollup** | Same `run_id` across agents; child spend rolls into the parent total |
+| **Shared run ledger** | Spend, inflight, and halt in SQLite so every agent enforces one run budget |
 | **Sticky halt** | Once halted, every later crossing for that run is refused |
 | **Fail closed** | Missing registration or price → refuse (upcoming, optional) |
 | **Run history** | Completed, halted, and throttled runs with cost, steps, and halt reasons |
@@ -223,9 +224,15 @@ Screenshots from the reference **research → summarize** two-agent bench.
 - **Policy admin** — edit budgets and policy instances
 - **Dashboard** — run history, cost, and problematic runs
 
-Includes a step-cap halt example and control-plane signal view.
+Includes a step-cap halt example, a **shared-ledger budget** comparison (multi-agent cap enforcement), and control-plane signal view.
 
-→ [See screenshots](./docs/demo-bench.md)
+→ [See screenshots](./docs/demo-bench.md) · [Shared ledger](./docs/shared-ledger.md)
+
+### [Multi-agent budgets (shared ledger)](./docs/shared-ledger.md)
+
+Why per-process ledgers let a two-agent run exceed its cap — and how SQLite-backed spend fixes it. Before/after screenshots at a $0.001 demo cap.
+
+→ [Read shared ledger](./docs/shared-ledger.md)
 
 ### [Policies & actions](./docs/policies-and-actions.md)
 

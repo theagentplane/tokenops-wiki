@@ -75,7 +75,10 @@ In a pipeline (research → summarize in the demo bench):
 - **Same `run_id`** across all agents
 - **Child span** linked to parent for trace visibility
 - Child spend **rolls up** into the parent run total
+- **Shared ledger** — spend and halt live in SQLite so every process sees the same `run_llm_cap` headroom (not a fresh cap per agent)
 - Policies on each agent can differ, but the run-level budget sees aggregate spend
+
+→ [Multi-agent budgets (shared ledger)](./shared-ledger.md) — before/after screenshots
 
 ### 6. Outcome
 

@@ -94,6 +94,17 @@ make run         # agents + UI at http://localhost:8501
 
 To reproduce the halt screenshot: Policy admin → edit `step_cap` → set `max_steps` to **3** → Run simulator → Start run.
 
+### Shared run budget (multi-agent)
+
+When research delegates to summarize, both agents share one `run_id`. With a **shared SQLite ledger**, summarize sees research spend before its first LLM call — so a tight `run_llm_cap` can halt the run before overspend. Without it, each agent had an independent in-memory cap and the run could complete over budget.
+
+```bash
+python scripts/prep_ledger_comparison.py   # sets run_llm_cap to $0.001
+SEARCH_BACKEND=corpus make ui
+```
+
+→ Full walkthrough with screenshots: [Shared ledger](./shared-ledger.md)
+
 ---
 
-[Back to overview](../README.md) · [Workflow](./workflow.md) · [Policies & actions](./policies-and-actions.md)
+[Back to overview](../README.md) · [Workflow](./workflow.md) · [Policies & actions](./policies-and-actions.md) · [Shared ledger](./shared-ledger.md)
