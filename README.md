@@ -251,5 +251,8 @@ Open a [GitHub Issue](https://github.com/theagentplane/tokenops-wiki/issues) or 
 → [Get in touch](./docs/contact.md)
 
 ---
+### Related Content
+
+https://www.youtube.com/watch?v=Lc8zRh9muoY&list=PLH_QqCJrJ8Is
 
 *TokenOps is developed by [Agent Plane](https://github.com/theagentplane).*
