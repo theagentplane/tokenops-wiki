@@ -4,7 +4,7 @@
 
 TokenOps is a control plane that sits alongside your agent (data plane). It measures spend as it accrues, attributes it to the right run and customer context, and enforces deterministic policies — before and after each model, tool, and delegation call.
 
-### Deck : https://github.com/theagentplane/tokenops-wiki/blob/main/docs/TokenOps%20-%20deck.pptx
+##### Check deck here : https://github.com/theagentplane/tokenops-wiki/blob/main/docs/TokenOps%20-%20deck.pptx
 
 ---
 
