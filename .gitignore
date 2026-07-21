@@ -8,3 +8,5 @@ tokenops.db
 tokenops.db-*
 .DS_Store
 benchmarking/**/vendor/
+*.db
+benchmarking/**/*.db
