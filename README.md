@@ -4,7 +4,26 @@
 
 TokenOps is a control plane that sits alongside your agent (data plane). It measures spend as it accrues, attributes it to the right run and customer context, and enforces deterministic policies — before and after each model, tool, and delegation call.
 
+| Repo | What |
+|------|------|
+| **[tokenops](https://github.com/theagentplane/tokenops)** | Importable core: SDK, control plane, Admin/Dashboard |
+| **This wiki** | Product docs, screenshots, **and runnable examples** (`examples/`, `benchmarking/`) |
+
 ##### Check deck here : https://github.com/theagentplane/tokenops-wiki/blob/main/docs/TokenOps%20-%20deck.pptx
+
+## Runnable examples (this repo)
+
+```bash
+# Prefer a sibling checkout of theagentplane/tokenops
+make install
+TOKENOPS_CONFIG=examples/config/default.yaml make db-reset
+make run          # two-agent Research → Summarize + plane + Admin UI
+make triad        # Planner → Researcher → Writer
+make bench-ui     # Chat + Simulator
+```
+
+Details: [`examples/README.md`](examples/README.md) · walkthrough: [`docs/demo-bench.md`](docs/demo-bench.md) ·
+field guide: [`docs/field-guide-add-tokenops.md`](docs/field-guide-add-tokenops.md).
 
 ---
 
