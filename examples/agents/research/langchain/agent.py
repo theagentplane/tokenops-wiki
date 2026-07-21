@@ -6,7 +6,7 @@ import re
 from examples.agents.research import prompts
 from examples.agents.research.langchain.tools import make_search_tool
 from examples.agents.types import CorpusProfile, Finding, StepCallback, StepEvent, TokenUsage
-from tokenops.config.schema import AgentServerConfig
+from examples.app_config import AgentServerConfig
 
 
 def _get_chat_model(provider: str, model: str):

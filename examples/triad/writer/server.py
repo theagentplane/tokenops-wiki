@@ -13,7 +13,7 @@ from examples.agents.types import StepEvent, TokenUsage
 from examples.triad.messages import parse_outline, parse_questions, write_response
 from examples.triad.writer.agent import WriterAgent
 
-from tokenops.config import load_config
+from examples.app_config import load_config
 from tokenops.control import (
     ApplyControls,
     PreviewControls,

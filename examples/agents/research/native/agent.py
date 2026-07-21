@@ -10,7 +10,7 @@ from tokenops.control.context import current_governance
 from examples.agents.research import prompts
 from examples.agents.research.tools import core
 from examples.agents.types import CorpusProfile, Finding, StepCallback, StepEvent, TokenUsage
-from tokenops.config.schema import AgentServerConfig
+from examples.app_config import AgentServerConfig
 from chronicle import InputState, boundary
 from tokenops.providers import complete
 

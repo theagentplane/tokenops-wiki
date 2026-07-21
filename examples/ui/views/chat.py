@@ -7,7 +7,7 @@ import streamlit as st
 from examples.a2a.client import check_health_sync, submit_task_sync, submit_task_sync_with_meta
 from tokenops.control.models import GovernanceMode
 from examples.agents.types import RunResult
-from tokenops.config import load_config
+from examples.app_config import load_config
 from examples.ui.demo_chips import CHIPS, ChipId, live_governance_banner, prepare_chip_governance
 from tokenops.ui.store_client import get_store
 from tokenops.ui.theme import GOLD, page_shell, status_pill

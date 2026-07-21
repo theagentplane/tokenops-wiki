@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any, Literal
 
-from tokenops.config.schema import AgentServerConfig
+from examples.app_config import AgentServerConfig
 from tokenops.control.models import BudgetSpec, GovernanceMode, PolicyInstance
 from tokenops.control.store import Store
 from examples.ui.simulator import SimulationResult, run_simulation

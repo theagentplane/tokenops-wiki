@@ -6,7 +6,7 @@ import pandas as pd
 import streamlit as st
 import yaml
 
-from tokenops.config import load_config
+from examples.app_config import load_config
 from tokenops.env import load_env
 from examples.ui.simulator import (
     SimulationResult,
@@ -92,7 +92,7 @@ if start:
 
     with st.status("Running governed pipeline…", expanded=True) as status:
         try:
-            from tokenops.config.schema import AgentServerConfig
+            from examples.app_config import AgentServerConfig
             from tokenops.control.models import GovernanceMode
 
             _sat = (

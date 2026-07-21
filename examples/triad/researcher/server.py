@@ -13,7 +13,7 @@ from examples.agents.types import StepEvent, TokenUsage
 from examples.triad.messages import parse_outline, parse_questions, research_response
 from examples.triad.researcher.agent import ResearcherAgent
 
-from tokenops.config import load_config
+from examples.app_config import load_config
 from tokenops.control import (
     ApplyControls,
     PreviewControls,

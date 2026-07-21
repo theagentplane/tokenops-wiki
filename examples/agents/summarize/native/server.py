@@ -10,7 +10,7 @@ from examples.a2a.server import create_a2a_app, run_server
 from examples.agents.summarize.native.agent import NativeSummarizeAgent
 from examples.agents.types import StepEvent, TokenUsage
 from tokenops.control import install_crossing_hook
-from tokenops.config import load_config
+from examples.app_config import load_config
 from tokenops.control import (
     ApplyControls,
     PreviewControls,

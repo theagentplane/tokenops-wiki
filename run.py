@@ -118,7 +118,7 @@ def main() -> int:
     signal.signal(signal.SIGINT, on_signal)
     signal.signal(signal.SIGTERM, on_signal)
 
-    from tokenops.config import load_config
+    from examples.app_config import load_config
 
     cfg = load_config()
     for port in {7700, cfg.research.port, cfg.summarize.port, UI_PORT}:

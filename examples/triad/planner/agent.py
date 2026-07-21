@@ -8,7 +8,7 @@ from typing import Any
 
 from examples.agents.types import StepCallback, StepEvent, TokenUsage
 from examples.triad.planner.prompts import plan_prompt
-from tokenops.config.schema import PlannerServerConfig
+from examples.app_config import PlannerServerConfig
 from tokenops.providers import complete
 
 

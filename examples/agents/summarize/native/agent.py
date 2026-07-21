@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from examples.agents.summarize.prompts import summarize_prompt
 from examples.agents.types import Finding, StepCallback, StepEvent, TokenUsage
-from tokenops.config.schema import SummarizeServerConfig
+from examples.app_config import SummarizeServerConfig
 from tokenops.providers import complete
 
 
