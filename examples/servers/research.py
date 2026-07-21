@@ -4,7 +4,7 @@ import os
 import sys
 
 from tokenops.env import load_env
-from tokenops.config import load_config
+from examples.app_config import load_config
 
 load_env()
 

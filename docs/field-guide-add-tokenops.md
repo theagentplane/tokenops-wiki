@@ -183,9 +183,9 @@ That wires Chronicle `on_crossing` → `Governor.observe` (see `tokenops.control
 ## Step 6 — Delegates: spans only (no parent cost rollup)
 
 A2A hops open a **new span** with `X-TokenOps-Parent-Span-Id` set from the caller
-(ambient propagation). Child LLM/tool spend is written to the **shared ledger** for the
-same `run_id`. The parent must **not** call `observation_from_delegate` to re-add
-`cost_micros` (that double-counted).
+(ambient propagation). Child LLM/tool spend is already in the **shared ledger** for the
+same `run_id`. The parent must **not** re-bill child `cost_micros` on its own observation
+(that double-counted).
 
 Refuse to delegate when the shared run budget is already exhausted
 (`ledger.budget_left("run_llm_cap", ...)`) — still allowed as a local check.
@@ -255,5 +255,4 @@ python scripts/render_field_guide_snippets.py
 4. Mark tools with Chronicle `@boundary`; rely on the crossing hook for observe.
 5. Propagate `X-TokenOps-Run-Id` (and parent span) on every outbound A2A call
    (`merge_propagation_headers` / ambient context).
-6. Do **not** re-bill child `cost_micros` on the parent (`observation_from_delegate`
-   double-counts against the shared ledger).
+6. Do **not** re-bill child `cost_micros` on the parent (shared ledger already has it).

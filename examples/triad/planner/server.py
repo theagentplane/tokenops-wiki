@@ -23,7 +23,7 @@ from examples.triad.messages import plan_response
 from examples.triad.planner.agent import PlannerAgent
 from chronicle.session import reset_session
 
-from tokenops.config import load_config
+from examples.app_config import load_config
 from tokenops.control import (
     ApplyControls,
     PreviewControls,

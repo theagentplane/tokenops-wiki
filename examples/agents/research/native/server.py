@@ -12,7 +12,7 @@ from examples.agents.research.native.agent import NativeResearchAgent
 from examples.agents.types import RunResult, StepEvent, TokenUsage
 from chronicle.session import reset_session
 
-from tokenops.config import load_config
+from examples.app_config import load_config
 from tokenops.control import (
     ApplyControls,
     PreviewControls,
@@ -130,7 +130,7 @@ def build_app():
                     token_usage = token_usage.merge(sum_tokens)
                     steps.extend(sum_steps)
                     # Child spend is already in the shared ledger for this run_id;
-                    # do not re-add via observation_from_delegate.
+                    # do not re-bill it on the parent.
                 except Halt as halt:
                     status, halt_reason = "halted", halt.action.reason
                 except Throttled as thr:

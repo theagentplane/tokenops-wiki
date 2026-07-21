@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from examples.agents.protocols import ResearchAgent, SummarizeAgent
-from tokenops.config.schema import AgentServerConfig, SummarizeServerConfig
+from examples.app_config import AgentServerConfig, SummarizeServerConfig
 
 
 def build_research(config: AgentServerConfig) -> ResearchAgent:

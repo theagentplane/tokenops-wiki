@@ -19,7 +19,7 @@ from chronicle import Envelope
 from chronicle.session import reset_session
 
 from tokenops.control import install_crossing_hook
-from tokenops.config.schema import AgentServerConfig
+from examples.app_config import AgentServerConfig
 from tokenops.control.attribution import build_attribution
 from tokenops.control.context import (
     PARENT_SPAN_ID_HEADER,

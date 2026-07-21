@@ -9,7 +9,7 @@ from dataclasses import replace
 from examples.agents.types import CorpusProfile, Finding, StepCallback, StepEvent, TokenUsage
 from examples.triad.researcher.prompts import decision_prompt
 from examples.triad.researcher.tools import make_fetch_tool, make_search_tool
-from tokenops.config.schema import ResearcherServerConfig
+from examples.app_config import ResearcherServerConfig
 from tokenops.control.context import current_governance
 from tokenops.providers import complete
 

@@ -22,7 +22,7 @@ sys.path.insert(0, str(ROOT / "src"))
 os.environ.setdefault("PYTHONPATH", f"{ROOT / 'src'}{os.pathsep}{ROOT}")
 os.environ.setdefault("TOKENOPS_CONFIG", "examples/config/default.yaml")
 
-from tokenops.config import load_config  # noqa: E402
+from examples.app_config import load_config  # noqa: E402
 from tokenops.control.models import GovernanceMode  # noqa: E402
 from tokenops.control.store import Store  # noqa: E402
 from tokenops.env import load_env  # noqa: E402

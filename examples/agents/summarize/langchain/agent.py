@@ -4,7 +4,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 from examples.agents.summarize.prompts import summarize_prompt
 from examples.agents.types import Finding, StepCallback, StepEvent, TokenUsage
-from tokenops.config.schema import SummarizeServerConfig
+from examples.app_config import SummarizeServerConfig
 
 
 def _get_chat_model(provider: str, model: str):
