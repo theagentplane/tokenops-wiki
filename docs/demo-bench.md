@@ -1,6 +1,16 @@
 # Demo bench walkthrough
 
-The reference **two-agent test bench** demonstrates TokenOps on a research → summarize pipeline. Screenshots below are from the local Streamlit UI shipped with the demo harness.
+The reference **two-agent test bench** demonstrates TokenOps on a research → summarize pipeline.
+Runnable code lives in this wiki under [`examples/`](../examples/); the core library is
+[tokenops](https://github.com/theagentplane/tokenops).
+
+```bash
+make install
+make run          # plane + research + summarize + Admin UI
+make bench-ui     # Chat + Simulator (screenshots below)
+```
+
+Screenshots below are from the local Streamlit UI shipped with the demo harness (`examples/ui`).
 
 ## Pages
 
@@ -8,7 +18,7 @@ The reference **two-agent test bench** demonstrates TokenOps on a research → s
 |---|---|
 | **Test Bench** | Live pipeline — research agent delegates to summarize over HTTP |
 | **Run simulator** | In-process run with live timeline, trace, and control-plane tabs |
-| **Policy admin** | Edit budgets, policies, and segments |
+| **Policy admin** | Edit budgets, policies, and segments (plane Admin UI) |
 | **Dashboard** | Run history, aggregate cost, problematic runs |
 
 ---
